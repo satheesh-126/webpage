@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Certificate Verification - Demo</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #17365d;
+        }
+
+        .page {
+            width: 100%;
+            min-height: 100vh;
+            padding: 65px 11%;
+            position: relative;
+        }
+
+        /* Main heading */
+        .title {
+            font-size: 36px;
+            font-weight: 600;
+            margin: 0 0 70px 0;
+            color: #17365d;
+        }
+
+        /* Verified stamp */
+        .stamp-container {
+    width: 150px;
+    height: 150px;
+    margin-left: 35px;
+    margin-bottom: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.verified-seal {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    display: block;
+}
+        /* Congratulations */
+        .congratulations {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 35px;
+            color: #17365d;
+        }
+
+        /* Description */
+        .description {
+            font-size: 19px;
+            font-weight: bold;
+            margin-bottom: 35px;
+            color: #17365d;
+        }
+
+        /* Certificate information */
+        .certificate-info {
+            padding-left: 22px;
+            margin: 0 0 35px 0;
+        }
+
+        .certificate-info li {
+            font-size: 18px;
+            line-height: 1.65;
+            padding-left: 5px;
+            color: #284a72;
+        }
+
+        .label {
+            font-weight: normal;
+        }
+
+        /* Footer note */
+        .note {
+            font-size: 17px;
+            font-style: italic;
+            color: #526783;
+            margin-top: 20px;
+        }
+
+
+        /* Mobile */
+        @media (max-width: 768px) {
+
+            .page {
+                padding: 35px 7%;
+            }
+
+            .title {
+                font-size: 27px;
+                margin-bottom: 50px;
+            }
+
+            .stamp {
+                margin-left: 20px;
+                margin-bottom: 55px;
+                width: 105px;
+                height: 105px;
+            }
+
+            .stamp::before {
+                width: 88px;
+                height: 88px;
+            }
+
+            .stamp::after {
+                font-size: 17px;
+                top: 37px;
+            }
+
+            .congratulations {
+                font-size: 17px;
+            }
+
+            .description {
+                font-size: 16px;
+            }
+
+            .certificate-info li {
+                font-size: 15px;
+            }
+
+            .note {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="page">
+
+        <h1 class="title">
+            InternCertify Verified Certificate – Satheesh K
+        </h1>
+
+    <div class="stamp-container">
+        <img
+           src="./verified-seal.png"
+           alt="Demo verification seal"
+           class="verified-seal"
+        >
+    </div>        
+
+        <div class="congratulations">
+            🎉 &nbsp; CONGRATULATIONS &nbsp; 🎉
+        </div>
+
+        <div class="description">
+            It’s a verified certificate from Intern Certify
+        </div>
+
+        <ul class="certificate-info">
+
+            <li>
+                Learner Full Name :
+                <span class="label">Satheesh K</span>
+            </li>
+
+            <li>
+                Internship Course :
+                <span class="label">Python for AI & Automation</span>
+            </li>
+
+            <li>
+                Duration :
+                <span class="label">19/05/2026 to 17/06/2026</span>
+            </li>
+
+        </ul>
+
+        <p class="note">
+            The details accessed via the QR code are secure and will only
+            display the information related to the learner’s internship.
+        </p>
+
+    </main>
+
+</body>
+</html>
